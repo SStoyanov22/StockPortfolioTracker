@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UmieAxWWBMw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\s.stoyanov\\source\\repos\\github.com\\SStoyanov22\\StockPortfolioTracker\\src\\Contracts\\Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s.stoyanov\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

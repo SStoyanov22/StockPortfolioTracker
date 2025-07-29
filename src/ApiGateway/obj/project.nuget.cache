@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YIbqsN6KVtY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\s.stoyanov\\source\\repos\\github.com\\SStoyanov22\\StockPortfolioTracker\\src\\ApiGateway\\ApiGateway.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s.stoyanov\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\s.stoyanov\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
