@@ -64,3 +64,150 @@ This project follows a microservices architecture with the following services:
    ```
 
 ## 📁 Project Structure
+StockPortfolioTracker/
+├── src/
+│ ├── Services/
+│ │ ├── IdentityService/
+│ │ │ ├── Controllers/
+│ │ │ ├── Models/
+│ │ │ ├── Services/
+│ │ │ ├── Data/
+│ │ │ │ └── Scripts/
+│ │ │ └── Hubs/
+│ │ ├── PortfolioService/
+│ │ │ ├── Controllers/
+│ │ │ ├── Models/
+│ │ │ ├── Services/
+│ │ │ ├── Data/
+│ │ │ │ └── Scripts/
+│ │ │ └── Hubs/
+│ │ ├── StockDataService/
+│ │ │ ├── Controllers/
+│ │ │ ├── Models/
+│ │ │ ├── Services/
+│ │ │ ├── Data/
+│ │ │ │ └── Scripts/
+│ │ │ └── Hubs/
+│ │ ├── NotificationService/
+│ │ │ ├── Controllers/
+│ │ │ ├── Models/
+│ │ │ ├── Services/
+│ │ │ ├── Data/
+│ │ │ │ └── Scripts/
+│ │ │ └── Hubs/
+│ │ └── ApiGateway/
+│ └── Shared/
+│ ├── Common/
+│ │ ├── Extensions/
+│ │ ├── Helpers/
+│ │ ├── Constants/
+│ │ └── Middleware/
+│ ├── Models/
+│ │ ├── Entities/
+│ │ ├── DTOs/
+│ │ └── Enums/
+│ └── Contracts/
+│ ├── Interfaces/
+│ └── Events/
+├── tests/
+│ ├── IdentityService.Tests/
+│ │ ├── Controllers/
+│ │ ├── Services/
+│ │ └── Data/
+│ ├── PortfolioService.Tests/
+│ │ ├── Controllers/
+│ │ ├── Services/
+│ │ └── Data/
+│ ├── StockDataService.Tests/
+│ │ ├── Controllers/
+│ │ ├── Services/
+│ │ └── Data/
+│ └── Integration.Tests/
+├── docker/
+│ └── Dockerfiles/
+├── scripts/
+│ └── migration-scripts/
+├── docs/
+│ └── images/
+├── .github/
+│ └── workflows/
+└── tools/
+├── postman/
+└── database/
+├── backup-scripts/
+└── restore-scripts/
+
+## **🏗️ Architecture Overview**
+
+### **Microservices:**
+- **IdentityService** - User authentication and authorization
+- **PortfolioService** - Portfolio management and transactions
+- **StockDataService** - Stock data and market information
+- **NotificationService** - Email and in-app notifications
+- **ApiGateway** - API routing and aggregation
+
+### **Shared Libraries:**
+- **Common** - Extensions, helpers, and middleware
+- **Models** - Entities, DTOs, and enums
+- **Contracts** - Interfaces and events
+
+### **Technology Stack:**
+- **.NET 8** - Backend framework
+- **PostgreSQL** - Primary database with Dapper ORM
+- **Redis** - Caching and session storage
+- **SignalR** - Real-time updates
+- **JWT** - Authentication
+- **Docker** - Containerization
+- **GitHub Actions** - CI/CD
+
+### **Database Schema:**
+- **stockportfolio_identity** - User management
+- **stockportfolio_portfolio** - Portfolio and transactions
+- **stockportfolio_stockdata** - Stock and market data
+- **stockportfolio_notification** - Notifications and alerts
+
+## �� Testing
+
+```bash
+# Run all tests
+dotnet test
+
+# Run specific test project
+dotnet test tests/PortfolioService.Tests/
+```
+
+## 🐳 Docker
+
+```bash
+# Build and run with Docker Compose
+docker-compose up --build
+```
+
+## 📚 API Documentation
+
+Each service includes Swagger documentation available at:
+- Identity Service: `https://localhost:5001/swagger`
+- Portfolio Service: `https://localhost:5002/swagger`
+- Stock Data Service: `https://localhost:5003/swagger`
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+Your Name - [Your Email]
+
+## �� Acknowledgments
+
+- .NET team for the excellent framework
+- Dapper team for the lightweight ORM
+- All contributors and supporters
